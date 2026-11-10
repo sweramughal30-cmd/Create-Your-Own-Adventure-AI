@@ -18,7 +18,7 @@ class CompleteStoryNodeResponse(StoryNodeBase):
     id: int
     options: List[StoryOptionSchema] = []
     class Config:
-        form_attributes = True
+        from_attributes = True
 
 # Story main
 
@@ -26,7 +26,7 @@ class StoryBase(BaseModel):
      title:str
      session_id:Optional[str] = None
      class Config:
-         form_attributes = True
+         from_attributes = True
 #  create request
 class CreateStoryRequest(BaseModel):
     theme: str
@@ -38,4 +38,4 @@ class CompleteStoryResponse(StoryBase):
     all_nodes:Dict[int, CompleteStoryNodeResponse]
 
     class Config:
-        form_attributes = True
+        from_attributes = True
