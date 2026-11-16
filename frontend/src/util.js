@@ -1,1 +1,1 @@
-export const API_BASE_URL = import.meta.env.VITE_API_URL || "/api";
+export const API_BASE_URL = import.meta.env.VITE_API_URL || "https://create-your-own-adventure-ai-production-bb0bcb01.up.railway.app/api";
