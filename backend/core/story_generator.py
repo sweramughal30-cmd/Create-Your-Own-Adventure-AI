@@ -16,7 +16,7 @@ class StoryGenerator:
 
     @classmethod
     def _get_llm(cls):
-        return ChatGoogleGenerativeAI(model="gemini-3.8-flash")
+        return ChatGoogleGenerativeAI(model="gemini-2.5-flash")
 
     @classmethod
     def generate_story(cls, db: Session, session_id: str, theme: str = "fantasy")-> Story:
